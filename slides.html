@@ -497,57 +497,57 @@
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Headings & HTML5 Sectioning tags With the introduction of HTML5 sectioning tags, each part of the document that uses a sectioning tag now gets its *own* outline. **HTML5 Heading Outline** ```xml
-                        <h1>Essay Title</h1>
+                        #标题 & HTML5 分节标签 在介绍HTML5分节标签时, 文件中每一个使用了分节标签的部分现在都有了它们各自的大纲。 **HTML5 Heading Outline** ```xml
+                        <h1>文章标题</h1>
 
                         <section>
-                            <h1>Introduction</h1>
-                            <p>stuff here</p>
+                            <h1>介绍</h1>
+                            <p>素材</p>
                         </section>
 
                         <section>
-                            <h1>First supporting idea</h1>
-                            <h2>point 1</h2>
-                            <h2>point 2</h2>
+                            <h1>分论点一</h1>
+                            <h2>第一点</h2>
+                            <h2>第二点</h2>
                         </section>
-                        ``` --- ###Resource Read more about headings and HTML5
+                        ``` --- ###资源 阅读更多关于标题以及HTML5的材料
                         <!-- .element: class="footnote" -->[here](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/Sections_and_Outlines_of_an_HTML5_document) and [here](http://webdesign.tutsplus.com/articles/the-truth-about-multiple-h1-tags-in-the-html5-era--webdesign-16824).
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Exercise #3: Add Content (15mins) Add some text based content. Images & links will also be covered next. See
-                        <!-- .element: class="note" -->`exercise-3.html` for reference or view the next slide but only if you're stuck! Add the content below to make your page content look similar to [this](framework/img/workshop/exercise-3.png). 1. Add your name & tagline in the `
-                        <header>` section using the appropriate heading tags.
-                            <span class="note">(**Reminder!** `<head>` and `<header>` are two different tags.)</span> 1. In the **About** section, add a heading and 2 paragraphs.
-                            <span class="note">Don&#39;t have content to add? Use placeholder text! See resources below.</span> 1. In the **Loves** section, add a heading and a paragraph. 1. In the **Footer**, add a heading. --- ###Resources * http://meettheipsums.com
+                        #练习 #3: 添加内容(15分钟) 添加一些文本内容，图片以及链接也将在下面有所涉及。 看
+                        <!-- .element: class="note" -->`exercise-3.html`可供参考，如果您还是觉得束手无策，您可以浏览下一张幻灯片。 在下面添加内容以使得你的页面看起来和这个页面相似[this](framework/img/workshop/exercise-3.png). 1. 在`
+                        <header>`中添加您的名字以及标签行。
+                            <span class="note">(**注意!** `<head>` 和 `<header>` 是两个不同的标签。)</span> 1. 在章节**About**中增加一个标题以及两个段落。
+                            <span class="note">没有内容可添加怎么办呢？使用占位文本！请看下方的资源。</span> 1. 在章节 **Loves**中, 添加一个段落以及一个标题。 1. 在 **Footer**中, 添加一个标题。 --- ###资源 * http://meettheipsums.com
                             * http://thewireipsum.com * http://www.quotes.net
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Review your code (Also found in
-                        <!-- .element: class="note" -->`exercise-3.html`) ```
+                        #检查你的代码 (同时在
+                        <!-- .element: class="note" -->`exercise-3.html`) ```中寻找以下代码：
                         <!DOCTYPE html>
                         <html lang="en">
 
                         <head>
                             <meta charset="UTF-8">
-                            <title>Laura Ipsum | Designer & Developer</title>
+                            <title>劳拉·依普莎姆 | 设计师以及开发者</title>
                         </head>
 
                         <body>
                             <!-- page header -->
                             <header>
-                                <h1>Hi! I'm Laura Ipsum.</h1>
-                                <h2>I'm a digital designer and developer with a penchant for gourmet doughnuts.</h2>
+                                <h1>你好！我是劳拉·依普莎姆。</h1>
+                                <h2>我是一名热爱美味的甜甜圈的数码设计师以及开发者。</h2>
                             </header>
 
                             <!-- about me section -->
                             <section class="about">
-                                <h1>About Me</h1>
+                                <h1>关于我</h1>
 
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
                                     consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
@@ -558,13 +558,13 @@
 
                             <!-- My favorite things section -->
                             <section class="loves">
-                                <h1>Love, Love, Love</h1>
-                                <p>Here are a few things that I really love.</p>
+                                <h1>爱好</h1>
+                                <p>这是我非常喜欢的一些东西。</p>
                             </section>
 
                             <!-- footer & contact info -->
                             <footer>
-                                <h1>Contact Me</h1>
+                                <h1>与我联系</h1>
                             </footer>
                         </body>
 
@@ -575,92 +575,90 @@
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Self-closing tags and images Self-closing tags don't format content or require a closing tag. They are used to embed objects onto the page; they *are* the content. Images use a self-closing tag. It also requires a `src` *attribute* to tell the browser
-                        the location of the image file. ```
-                        <img src="path/to/image/file-name"> ``` `alt` is another attribute that is added to images to provide *alternative text* to visually impaired web visitors using screen readers. ```
-                        <img src="http://placekitten.com/200/300" alt="kitten!"> ``` ##Example of `alt` when image does not load:
+                        #自闭合标签以及图像 自闭合标签不会对内容进行版式设计，也不需要闭合标签。它们用以将对象嵌入到页面中。它们本身就是内容的一部分。图像使用的就是闭合标签，它也需要添加一个“src”（source）来告诉浏览器图片的来源. ```
+                        <img src="path/to/image/file-name"> ``` “alt”是一种为图像添加替代文本的特性，用以帮助使用屏幕阅读器来访问网站的视障访客。 ```
+                        <img src="http://placekitten.com/200/300" alt="kitten!"> ``` ##当图片没有加载出来的时候使用"alt"的例子：
                         <img src="" alt="kitten!">
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Image file types **gif** - smaller file size when used for line art, charts, and images with minimal colour variation. <span class="note">(That's why animated gifs tend to look grainy but oh so fun!)</span> **jpg** - smaller file
-                        size when used for photographs with lots of rich colours or gradients **png** - larger file size but has the best quality and is great for images with transparent backgrounds **svg** - XML-based vector image format for 2D graphics
-                        with support for interactivity and animation --- ###Resource [Here's a big list of image placeholder sites](http://www.wpfreeware.com/tutorial/placeholder-images-generator-service-web-designers/).
+                        #图像文件类型 **gif** - 当使用线描、图表以及颜色变化极少的图片时，gif文件的大小会更小。<span class="note">(这就是为什么gif动图看起来虽然粗糙但是却非常有趣的原因！)</span> **jpg** -
+                        当使用具备多种颜色或是渐变色的照片时，jpg文件的大小会更小。**png** - png格式的文件较大，但是它的文件质量最佳，并且非常适用于背景透明的图片。**svg** - 一种基于XML的2D矢量图形格式，支持交互以及动画。
+                        --- ###资源 [这是一个提供大量的占位图网站的清单。](http://www.wpfreeware.com/tutorial/placeholder-images-generator-service-web-designers/).
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Image file paths It's best practice (but not required) to put image files into its own folder to keep the project files organized. Today's **project** directory already includes an **images** folder. Since the images are not in the same folder as **index.html**,
-                        use a *relative* path to link to the file. ```
-                        <img src="images/image-file.jpg"> ``` The starting point (**index.html**), is outside of the **images** folder. The above example directs the browser to a folder named **images**, then the filename, *including the file extension*.
+                        #图像文件路径 最好的做法是（并非必要）将图片放入一个独立的文件夹中，以使项目文件有条理地存放在一起。现在"project"目录下已经包括了一个名为"images"的文件夹。因为图片并非像"index.html"一样在同一个文件夹中并使用相对路径来链接到文件中去。```
+                        <img src="images/image-file.jpg"> ``` 起始文件 (**index.html**), 在“images”文件夹外。 上述例子引导浏览器打开一个名为“images”的文件夹, 然后读取相应的文件名以及文件扩展名。
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Image file paths If you have a folder in a folder, then add the subfolder into the path. ```
-                        <img src="folder/sub-folder/filename"> ``` If your file extensions do not show by default, here are instructions for [Mac](https://support.apple.com/kb/PH19072?locale=en_US) and for [Windows](http://windows.microsoft.com/en-ca/windows/show-hide-file-name-extensions#show-hide-file-name-extensions=windows-7).
+                        #图像文件路径 如果你在文件夹中还建立了一个文件夹，那就要将子文件夹也添加到路径中。```
+                        <img src="folder/sub-folder/filename"> ```如果您的文件扩展名不是默认设置为显示，这里有一份给Mac用户的操作指南：(https://support.apple.com/kb/PH19072?locale=en_US) 以及一份给Windows用户的操作指南：(http://windows.microsoft.com/en-ca/windows/show-hide-file-name-extensions#show-hide-file-name-extensions=windows-7)来教您如何设置。
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        # Hyperlinks A hyperlink references data, such as a web document, that the reader can directly follow, usually by clicking or hovering. Use the anchor tag, `<a>` to create the link. It also needs an `href` attribute to provide information for the location of the resource.
+                        #超链接 超链接可以引用资料，例如网页文件，以便读者通过点击或是移动鼠标直接获取。使用锚标签 "<a>"来创建链接。这同样需要一个"href"属性来提供目标地址。
 
         ```xml
-        <a href="http://ladieslearningcode.com">Ladies Learning Code</a> ``` To set the link to open in a new window, add a second attribute, `target`. ```xml
-                        <a href="http://ladieslearningcode.com" target="_blank">Ladies Learning Code</a> ``` Here's the syntax for an email link. ```xml
+        <a href="http://ladieslearningcode.com">女性学编程</a> ``` 添加第二个属性"target"来设置一个打开新窗口的链接 ```xml
+                        <a href="http://ladieslearningcode.com" target="_blank">女性学编程</a> ```这是一个电子邮件链接的语法。```xml
                         <a href="mailto:hello@myemail.com">hello@myemail.com</a> ```
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Exercise #4: Add links and images (15mins) 1. Add a profile image. 1. Add three or four images to your "Loves" section. 1. Add an email link in the footer. 1. Add the social links to the Footer/Contact section. * use the sample images in the **project
-                        > images ** folder * use your own images * make the images into links * use text links if you don't want to use an image Your page should look something like this:
+                        练习4: 添加链接以及图像(15分钟) 1.添加一张个人照片。 1. 在“爱好”一栏下添加三到四张图片。 1. 在页脚添加一个电子邮件链接。 1. 在页脚/联系方式一栏下添加社交网站链接。 * 使用在"project"文件夹中"images"里的样图
+                        * 使用你自己的照片 * 将图片设置到链接中* 如果你不想使用图片你可以使用文本链接。你的网页看上去应该像这个网页一样：
                         <!-- .element: class="note" -->[exercise-4.html](project/reference/exercise-4.html)
 
-                        <!-- .element: class="note" -->**Bonus exercise** Square images are better for the Part 2 exercises. You can crop and resize them using this free tool, [Pixlr](http://apps.pixlr.com/editor/). Between 200px - 400px is best. That's it! That's all the HTML you'll
-                        need for today's project!
+                        <!-- .element: class="note" -->**额外练习** 正方形的图片用在第二部分的练习中会更好。你可以使用这个自由工具来对图片进行裁剪或者调整大小：[Pixlr](http://apps.pixlr.com/editor/). 大小为200px至400px最好。就是这样！
+                        这些就是今天的项目中所有需要用到的HTML！
                     </script>
                 </section>
 
                 <section class="slide title" data-markdown data-toc>
                     <script type="text/template">
-                        #Intro to CSS ##Cascading Style Sheets
+                        #CSS入门## 级联样式表
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #CSS: The presentation layer * different language from HTML * stylesheet language with its own syntax rules * used to separate content (HTML) from presentation (CSS) * stylesheet contains a list of rules CSS requires these symbols: curly brackets `{ }`,
-                        colon `:`, semi-colon `;` ![keyboard](framework/img/workshop/keyboard-css.png)
+                        #CSS: 表示层 * 与HTML不同的语言 * 拥有自己的语法规则的样式表语言* 通常将内容(HTML)和表现(CSS)分开 * 样式表包含了一系列规则  CSS需要这些符号:大括号"{ }",
+                        冒号":", 分号 ";`"![keyboard](framework/img/workshop/keyboard-css.png)
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #CSS Syntax & Terminology **Selectors:** determines which HTML element(s) to apply the styles to. **Declarations:** style rules written in `property:value` pairs, are wrapped by curly brackets `{ }` and must end with a semi-colon `;` ``` selector { property:
-                        value; } ``` **Properties** determine the *type* of style to be applied (e.g. color). **Values** are specific to the property (red). ``` p { color: red; } ``` >In the above example, what is the selector? Property? Value?
+                        #CSS语法以及术语 **选择器:** 用以决定哪一个HTML元素采用哪一种样式**声明:** 样式规则为“性质:值”, 并将其放在大括号中，以分号结束 ``` 选择器 { 性质:
+                        值; } ``` **性质** 决定被应用的样式类型(例如：颜色). **值** 具体的性质(红). ``` p { color: red; } ``` >在上述例子中，哪一个是选择器？哪一个是性质？哪一个是值？
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Multiple CSS Declarations Multiple declarations can be added to one selector. Just be sure to end each declaration with a semi-colon and write them on a separate line for readability. ``` h2 { background-color: green; font-size: 50px; } ``` There are
-                        many, many CSS properties. New ones are added as old ones being retired (deprecated). It's good to have a few resources on hand. --- ###Resources * http://caniuse.com * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+                        #多个CSS声明块 多个声明能放在一个选择器中，只需要确保每个声明都以一个分号结束并且采用分行书写来确保其可读性。``` h2 { background-color: green; font-size: 50px; } ``` 
+                        CSS的性质有许多个，新性质添加后旧性质即被废弃。手头上有一些资源对学习很有帮助。 --- ###资源 * http://caniuse.com * https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
                         * http://htmldog.com/reference/cssproperties/
                     </script>
                 </section>
 
                 <section class="slide">
-                    <h1>Practice Selecting an element</h1>
-                    <p>Using the HTML example below, change the “selector” to apply the instructions in the comments.</p>
-                    <pre><code>&lt;p&gt;This is a paragraph.&lt;/p&gt;
-&lt;h2&gt;This is an h2.&lt;/h2&gt;
+                    <h1>练习选择一个元素</h1>
+                    <p>使用下列的HTML范例，改变选择器来将命令应用到注释中。</p>
+                    <pre><code>&lt;p&gt;这是一个段落。&lt;/p&gt;
+&lt;h2&gt;这是一个h2标签&lt;/h2&gt;
 </code></pre>
                     <textarea class="snippet" data-subject="#css-selectors">selector { /* select the paragraph */
   color: red;
@@ -669,49 +667,48 @@ selector { /* select the link */
   color: blue;
 }</textarea>
                     <div id="css-selectors" class="example">
-                        <p>This is a paragraph</p>
-                        <h2 style="margin-top:0;">This is an h2</h2>
+                        <p>这是一个段落。</p>
+                        <h2 style="margin-top:0;">这是一个h2标签</h2>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Referencing CSS Today, we&#39;ll be creating a separate style sheet file for the CSS. To create a stylesheet, just name the file with a `.css` file extension. The style sheet is then referenced within the `
+                        #今天引用CSS时，我们将会给CSS创建一个独立的样式表文件。创建一个样式表只需要将文件扩展名改为".css"。 这个样式表接下来会在HTML文件中的`
 
-                        <head>` of the HTML document (different tag from `
-                            <header>`). Use `
-                                <link>` tag and two *attributes*, `rel` and `href`. ```
+                        <head>`标签中被引用(与`
+                            <header>`标签不同). 使用 `
+                                <link>`标签以及下面两个属性： `rel`以及`href`. ```
 
                                 <head>
-                                    <title>Page Title</title>
+                                    <title>页面标题</title>
                                     <link rel="stylesheet" href="css/style.css">
                                 </head>
-                                ``` Though not required, css files are often saved in a separate folder for organization, just like images.
                                 <!-- .element: class="note" -->
 
-                                --- ###Resource There are several ways to add CSS. Read more about the difference ways to reference CSS
+                                --- ###资源 有几种添加CSS的方法。阅读更多关于用不同方法引用CSS的材料。
                                 <!-- .element: class="footnote" -->[here](http://reference.sitepoint.com/css/linkingcss).
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Class Exercise: Create your project's CSS File 1. In the text editor, create a new CSS file by selecting **File > New File**. 1. Name it **styles.css** and save it to the **css** folder (already included in your **project** folder).
-                        <span class="note">You can name the file anything but it's best to choose a name that describes the file content.<br> (i.e. styles.css, global.css, custom.css, project-name.css, etc)</span> 1. Then, reference it in **index.html**.
-                        <span class="note">**Pro tip!** Type `link` and press tab!</span> ```
+                        #班级练习: 为你的项目创建一个CSS文件。 1. 在文本编辑器里，通过选择**File > New File**来创建一个新文件。 1. 以 **styles.css** 命名并且将其存储在名为**css**的文件夹中(已经存在于你的**project**文件夹中).
+                        <span class="note">你可以随意命名这个文件，但是最好选择一个可以描述文件内容的名字。<br> (例如： styles.css, global.css, custom.css, project-name.css, etc)</span> 1. 然后，在 **index.html**中引用这个文件。
+                        <span class="note">**小贴士!** 输入`link`然后按Tab!</span> ```
 
                         <head>
                             <link rel="stylesheet" href="css/styles.css">
                         </head>
-                        ``` 1. Run a test by adding a background color to the viewport (`body`). ``` body { background: lightblue; } ```
+                        ``` 1. 通过在视窗（主体）中增加一种背景颜色来进行测试。 ``` body { background: lightblue; } ```
                     </script>
                 </section>
 
                 <section class="slide first-website" data-markdown>
                     <script type="text/template">
                         <div class="text">
-                            <h1>Ta-da!</h1>
+                            <h1>嗒哒!</h1>
                             <p>
-                                You just created your first website. HTML + CSS = website
+                                你刚刚创建了你的第一个网站。HTML + CSS = 网站
                             </p>
                         </div>
                     </script>
@@ -719,27 +716,26 @@ selector { /* select the link */
 
                 <section class="slide title" data-markdown>
                     <script type="text/template">
-                        #CSS colours <br> & typography
+                        #CSS颜色 <br> 以及印刷格式
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #CSS colours * **keywords** - use the actual name (e.g. `red`, `green`, `blue`, `pink`, `papayaWhip`, `paleGoldenrod`, etc) * **RGB** - uses 3 numerical values between `0` (black) and `255` (white) * **hex code** - number sign (`#`) followed by six characters
-                        (0-9, A-F) ``` /* These are all the same colour - this is also a CSS comment by the way! */ p { background: firebrick; background: rgb(178,34,34); background: #B22222; } ```
+                        #CSS颜色 * **关键词** - 使用实际名称(例如 `red`, `green`, `blue`, `pink`, `papayaWhip`, `paleGoldenrod`, 等等) * **RGB** - 使用三个在0（黑色）到255（白色）之间的数值 * **hex code** - 数字符号 (`#`)后接6个字符
+                        (0-9, A-F) ``` /* 这些都是同一种颜色 - 同时这也是一种CSS注释! */ p { background: firebrick; background: rgb(178,34,34); background: #B22222; } ```
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #CSS colours Let's take a look at some of these colour resources. * http://colours.neilorangepeel.com * http://coolors.co * http://wesandersonpalettes.tumblr.com * http://www.colorpicker.com * http://www.colourlovers.com * http://flatuicolors.com * http://color.hailpixel.com
+                        #CSS颜色 让我们来看一部分颜色方面的资源。 * http://colours.neilorangepeel.com * http://coolors.co * http://wesandersonpalettes.tumblr.com * http://www.colorpicker.com * http://www.colourlovers.com * http://flatuicolors.com * http://color.hailpixel.com
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #CSS Font Styles The are quite a few CSS properties for styling text. Here's a few to discuss today. Change some values below to see what happens!
-
+                        #CSS字体样式 CSS中的字体样式有许多性质。今天我们来讨论一些字体样式的性质。改变下面的一些值来观察会发生什么变化！
                         <textarea class="snippet" data-subject="#css-type">color: slateblue;
 font-family: Helvetica, Arial, serif;
 font-weight: normal;
@@ -748,7 +744,7 @@ line-height: 1.25;
 text-transform: lowercase;</textarea>
 
                         <div id="css-type" class="example">
-                            <p>Just some text to test out the above styles. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat sunt quae fugit illum in aut sed, quis nesciunt totam veritatis, dolores alias modi fuga commodi dicta facilis,
+                            <p>这是一些用来测试上述样式的文本。 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni repellat sunt quae fugit illum in aut sed, quis nesciunt totam veritatis, dolores alias modi fuga commodi dicta facilis,
                                 consequatur temporibus.</p>
                         </div>
 
