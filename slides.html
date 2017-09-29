@@ -1011,7 +1011,7 @@ width: 450px;
 padding: 35px;
 border: 15px solid green;</textarea>
                         <div id="example2" class="example">
-                            <p>This example DOES have the border box fix.</p>
+                            <p>这个例子是有边界框的修复的.</p>
                         </div>
                     </div>
                     </div>
@@ -1019,69 +1019,68 @@ border: 15px solid green;</textarea>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        # * { Box-sizing: Border-box } Add this snippet to your project (and to all future projects) to fix how the width/padding/border size is rendered. ``` /* apply a natural box layout model to all elements, but allowing components to change */ html { box-sizing:
-                        border-box; } *, *:before, *:after { box-sizing: inherit; } ``` Add it to the very top of your **styles.css** file. See more about The Box Model
-                        <!-- .element: class="note" -->[here](http://www.paulirish.com/2012/box-sizing-border-box-ftw/).
+                        # * { Box-sizing: Border-box } 在你的项目中添加这些片段 (以及所有将来的项目中) 来修复如何 宽度/内边距/边框尺寸的渲染问题. ``` /* 申请一个自然的盒布局到所有的元素中, 但也允许组件进行改变 */ html { box-sizing:
+                        border-box; } *, *:之前, *:之后 { box-sizing: inherit; } ``` 添加在 **styles.css** 文件的最顶部. 看更多关于盒模型
+                        <!-- .element: class="note" -->[点击这里](http://www.paulirish.com/2012/box-sizing-border-box-ftw/).
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Class Exercise #7 - Spacing (Make sure the box model fix from the previous slide has been added to
-                        <!-- .element: class="note" -->**styles.css** before proceeding. Also, use the amount of space that looks good to you & use the examples below as a guide.) Add padding to all the portions of the page so the content is not squished to the edge and has consistent
-                        styling. Combine the selectors to target them all at the same time. ``` header, section, footer { padding: 100px 150px; } ```
+                        #课堂练习 #7 - 间隔 (确保盒模型在上一页中已经被添加了
+                        <!-- .element: class="note" -->**styles.css** 在进行之前，以及，用比较多的空格，那样看起来比较好看 & 用下面所列的范例.) 在这个页面中添加内边距离，这样整个内容看起来不会和边缘贴得那么拥挤，并始终保持着风格。
+                        组合选择器，同时也选择好目标. ``` 页眉, 段落, 页脚 { padding: 100px 150px; } ```
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Class Exercise #7 - Spacing Notice the white space around the edge of the page? That's default space in the `body` element. Reset it by setting the values to 0. ``` body { margin: 0; padding: 0; } ``` Use `margin` to adjust the default space around the
+                        #课堂练习 #7 - 如何注意到页面四周边缘的空间? 默认的空隙是 `body` 这个元素. 需要把它重置为 0. ``` body { margin: 0; padding: 0; } ``` 用 `margin` 来判断四周围
                         `
-                        <h1>` and `
-                            <h2>` tag. (You can *inspect the element* using the dev tools to see the default margin.) ``` h1, h2 { margin: 0; /* removes default space */ } ```
+                        <h1>` 以及 `
+                            <h2>` 标签. (你可以 *检查元素* 用开发工具来衡量边缘.) ``` h1, h2 { margin: 0; /* removes default space */ } ```
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Class Exercise #7 - Spacing The final project also has the content in the "Loves" and footer section centered. How can we target all the content in both of those sections at the same time?
+                        #课堂练习 #7 - 让‘爱’中的内容，以及页脚的部分同时拥有间距。那我们如何同一时间命中所有内容呢？
 
                         <pre class="delayed"><code>.loves, 
         footer {
           text-align: center;
         }
-        </code></pre> Your page should now look similar to
                         <!-- .element: class="delayed" -->[exercise-7.html](project/reference/exercise-7.html).
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Class Exercise #8 - Typography If you want to remove the default bold style of the headings, you can add the `font-weight` property. ``` h1, h2 { font-weight: normal; /* removes default bold style */ } ``` Let's also customize some font styles using
-                        `font-size` and `line-height`. ``` h1 { font-size: 75px; } p { font-size: 18px; line-height: 1.5; /* adjusts space between the lines */ } ``` Your page should now look similar to [exercise-8.html](project/reference/exercise-8.html).
+                        #课堂练习 #8 - 在印刷中，如果你要移除标题中文字的默认黑体风格，你可以添加 `font-weight` 这个属性. ``` h1, h2 { font-weight: normal; /* removes default bold style */ } ``` 也可以按某些要求定制
+                        `font-size` and `line-height`. ``` h1 { font-size: 75px; } p { font-size: 18px; line-height: 1.5; /* adjusts space between the lines */ } ``` 你现在的页面应该和这个类似 [exercise-8.html](project/reference/exercise-8.html).
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Descendant selectors Matches any element that is a descendant (nested tag) of another element. This is useful when targeting elements inside of a specific block of content (e.g. an `h1` in the `header`). Note the space in *between* each selector. This
-                        is a requirement. ```css p a { /* targets only anchor link tags nested inside of a p tag */ } ul li a { /* targets a link nested in a list item in an unordered list */ } ```
+                        #派生选择符和任何元素都匹配， 是于任何派生元素 (嵌入标记)匹配 . 这对于靶元件在某个特点的封闭内容里很有用。(e.g. an `h1` in the `header`). 请注意每一个选择器之间的空隙. 这是一个要求
+                         ```css p a { /* targets only anchor link tags nested inside of a p tag */ } ul li a { /* targets a link nested in a list item in an unordered list */ } ```
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        #Descendant selectors **Pro tip!** Just like [Inception](http://www.imdb.com/title/tt1375666/), avoid going more than three levels. ``` nav ul li a { /* NOOOOOOOOOOO */ } ``` You can skip a level but specificity rules apply. For example, `nav ul li a`
-                        would override `nav a` because it&#39;s more specific. It&#39;s generally better to start with generic selectors and make them more specific, as needed.
+                        #子选择器**Pro tip!** 就好像[Inception](http://www.imdb.com/title/tt1375666/), 避免去到第三阶段 ``` nav ul li a { /* NOOOOOOOOOOO */ } ``` 你可以跳过一些阶段，但是必要的，专一的阶段要遵循规则. 例如 `nav ul li a`
+                        会推翻 `nav a` 因为它更专一，通常来说，一开始就使用一般的选择器，使得它们按需要变得很专一。
                     </script>
                 </section>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        # Class Exercise #9: Style the header Let's add some specific styles to the header, to set it apart from the rest of the page. We can't use `h1` or `h2` by itself since it will select all of them on the page so use *descendant selectors* instead. ```xml
+                        # 课堂练习 #9: 页眉的风格 L让我们来给页眉增添一点特殊的风格, 它不能够用和页面中其他位置相同的方法. 我们不能用`h1` or `h2` 它们自己本身，因为它会选择页面中的所有，所以使用 *descendant selectors* 来代替. ```xml
                         <header>
-                            <h1>Hi! I'm Laura Ipsum.</h1>
-                            <h2>I'm a digital designer and developer with a penchant for gourmet doughnuts.</h2>
+                            <h1>Hi! 我是 Laura Ipsum.</h1>
+                            <h2>我是一个数字设计师，同时我对炸圈饼这类的美食感兴趣.</h2>
                         </header>
                         ``` ``` header h1 { font-size: 100px; } header h2 { font-size: 32px; } ```
                     </script>
@@ -1089,14 +1088,14 @@ border: 15px solid green;</textarea>
 
                 <section class="slide" data-markdown>
                     <script type="text/template">
-                        # Class Exercise #9: Style the header Next, let's highlight some keywords in the header (e.g. name). The semantic HTML meaning of the `<strong>` tag is to give importance to the text, so be sure to use it only for important text.
+                        # 课堂练习 #9: 调整页眉下方风格, 让我们来标记页眉上的一些关键词 (e.g. name). HTML 的语义标记 `<strong>` 表示这部分是重点, 所以要确保被标记出来的都是重点部分
           
         ```
-        <h1>Hi! I'm <strong>Laura Ipsum</strong>.</h1>
-                        <h2>I'm a digital <strong>designer</strong> and <strong>developer</strong> with a penchant for gourmet doughnuts.</h2>
-                        ``` Now it can also be used to add CSS. If you want this style to be available anytime the `<strong>` tag is used, then there's no need to use a descendant selector.
+        <h1>Hi! 我是<strong>Laura Ipsum</strong>.</h1>
+                        <h2>我是数字 <strong>设计师</strong> 以及<strong>我喜欢</strong> 炸圈饼这类的美食</h2>
+                        ``` 现在，它也可以用来添加在 CSS. 如果你想让任何地方做标记 `<strong>` 用标签就好，不需要用后代选择器。
         
-        <!-- .element: class="note" -->**Pro tip!** Make sure the strong tag is used **semantically**, not just as a hook for styling!
+        <!-- .element: class="note" -->**重要提示!** 要确保一个明显的标签被使用 **semantically**, 并不是单单改变了风格
         
         ```
         strong {
@@ -1105,28 +1104,28 @@ border: 15px solid green;</textarea>
         ```
         Color reference: <!-- .element: class="note" --><span style="background:#9D6381;padding:0 5px;">#9D6381</span>
         
-        Your page should now look similar to [exercise-9.html](project/reference/exercise-9.html).
+        你的页面应该和这个类似 [exercise-9.html](project/reference/exercise-9.html).
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Building a web page in blocks
+        # 批量地做页面
         
-        When building a web page, it's best to start with the HTML structure, then add CSS styles from general styles to more specific styles. 
+        当作一个页面的时候,最好是由HTML的结构开始，然后再加上CSS的风格， 从一般的风格到专一特定的风格。
         
-        But as you may have already noticed, there's no clear cut path for what to build first.  It often takes a step by step approach.
+        但是你很可能已经注意到，并没有很清晰的路径说明要先做什么，通常都是一步一步地接近完善。
         
-        To avoid CSS specificity issues, let's go over some general advice for using the selectors covered so far.
+        为了避免CSS特定的情况，我们来重温一下CSS的建议
         
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        #CSS Selectors: Best Practices
+        #CSS 选择器: 最好的练习
         
-        **HTML element selectors:**  Use this to apply a style to all or *most* of that particular element on the page.  (e.g. all links on the page).
+        **HTML 元素选择器:**  用这些来应用在所有地方， *绝大多数* 以及那些特殊的页面.  (e.g. all links on the page).
         
         ```
         a {
@@ -1134,7 +1133,7 @@ border: 15px solid green;</textarea>
         }
         ```
         
-        **Descendant selectors:** Use this to apply a style to a specific element within another element. (e.g. Only links within the navigation)
+        **派生选择器:** 应用在一个特定元素在另一个元素内的风格上 (e.g. Only links within the navigation)
         
         ```
         nav a {
@@ -1142,7 +1141,7 @@ border: 15px solid green;</textarea>
         }
         ```
         
-        **Class selectors:**  Use this to apply a style to an element that is not specific to an  HTML element, only the class.  (e.g. a portion of the page that uses the same HTML tag as another page block)
+        **类选择符:**  使用此方法将样式应用于不是特定于HTML元素的元素，而只包含该类。 (e.g. a portion of the page that uses the same HTML tag as another page block)
         
         ```
         .about {
@@ -1154,42 +1153,42 @@ border: 15px solid green;</textarea>
     
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
-        #Page layout
+        #页面布局
         ##block, inline, float
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Stacked elements
+        #叠层元素
 
-        By default, most HTML elements are *block* level elements. This means they display stacked on top of each other and take up 100% width, in the order of how it is written.
+        默认来说, 大多数 HTML的元素都是 块体单元. 这意味着它们显示堆叠在彼此的顶部，占据100％的宽度，并按照它的写入顺序。
         
         ```
-        <p>element 1</p>
-        <p>element 2</p>
-        <p>element 3</p>
+        <p>元素 1</p>
+        <p>元素  2</p>
+        <p>元素  3</p>
         ```
         The above HTML example renders as:
         
         <div class="example">
-          <p>element 1</p>
-          <p>element 2</p>
-          <p>element 3</p>
+          <p>元素  1</p>
+          <p>元素  2</p>
+          <p>元素  3</p>
         </div>
       </script>
     </section>
       
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Block vs Inline
+        #块级元素与行内元素
 
-        If we look at the previous box outline example again, notice that regardless of the number of characters, the content in the heading tags stack on top of each other.  
+        如果再次查看前一个框大纲示例，请注意，无论字符数如何，标题标签中的内容都叠在一起。 
         
         ![](framework/img/workshop/box-borders-example.jpg)
         <!-- ![](framework/img/workshop/box-borders-stack.png) -->
         
-        Links are an example of *inline* elements, which sit side by side, in a line.  That's why you can add a link *within* a paragraph and not disrupt the flow of the text.
+        ink是* inline *元素的一个例子，它们并排在一起。这就是为什么你可以在**段内添加一个链接，而不会阻碍文本的流畅度。
         
         ---
         ###Resources
@@ -1200,11 +1199,11 @@ border: 15px solid green;</textarea>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Aligning content
+        #对齐内容
         
-        Even though block elements such as headings & paragraphs by default display stacked on top of each other, there are ways to align block level elements using CSS. 
+        即使诸如标题和段落的块元素默认在彼此之间显示堆叠，也有使用CSS对齐块级元素的方法。
         
-        Let's look at how to align the image and text to look like the below example.
+        我们来看看如何将图像和文本对齐，看下面的例子。
         
         ![](framework/img/workshop/about-image-float.png)<!-- .element: width="80%" -->
       </script>
@@ -1213,8 +1212,8 @@ border: 15px solid green;</textarea>
     <section class="slide">
       <h1>CSS Float</h1>
       
-      <p>To get block level elements to line up side by side, the stacking flow has to be <em>broken</em> first.</p>
-      <p> Use the <code>float</code> property with a value of <code>left</code> or <code>right</code> to align the element to either side. Any element after the floated element will move up beside it. Let's try it out in the example below.</p>
+      <p>要使块级元素并排排列，堆叠流必须<em>首先</em> 被破坏</p>
+      <p> Use the <code>float</code> property with a value of <code>left</code> or <code>right</code> 将元素对准到任一侧。浮动元素之后的任何元素都将在其旁边移动。我们来试试下面的例子。</p>
       
       <textarea class="snippet" data-subject="#float">img { 
   float: ;
@@ -1227,15 +1226,15 @@ border: 15px solid green;</textarea>
 
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Class Exercise: Float
+        #班级练习：float
         
-        Add a class to the profile image so to apply the float only to this image.
+        将一个类添加到配置文件图像，以便将float只应用于此图像。
         
         ```html
         <img class="profile-img" src="images/profile.jpg" alt="Laura Ipsum">
         ```
 
-        Then float the image (right or left).  Also, add space between the image and text using `margin`.
+        然后浮动图像（右或左）。此外，使用`margin'在图像和文本之间添加空格。
 
         ```css
         /* ABOUT
@@ -1245,7 +1244,7 @@ border: 15px solid green;</textarea>
           margin-left: 20px;
         }
         ```
-        Floating elements may have unexpected results.  See examples on the next slide.
+        浮动元素可能有意想不到的结果。请参阅下一页中的示例。
       </script>
     </section>
 
@@ -1256,9 +1255,8 @@ border: 15px solid green;</textarea>
         ![](framework/img/workshop/float-long-text.png)
         ![](framework/img/workshop/float-short-text.png)
         
-        If your content is the same size or longer than the floated element (the profile image) as shown on the left,  you won't notice this problem.  
-        
-        Adding more content won't fix this issue though.  First, we had to break the stacking order, now we have to put it back together.
+        如果你的内容与左侧所示的浮动元素（配置文件图像）的大小相同或更长，则不会注意到此问题。
+        添加更多内容不会解决此问题。首先，我们不得不打破堆在一起的秩序，现在我们必须把它放在一起。
       </script>
     </section>
     
@@ -1267,11 +1265,11 @@ border: 15px solid green;</textarea>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Class Exercise: Reset the float
+        # 课堂练习: 重置float
         
-        To restore the regular stacking flow *after* the floated element, it needs to be *reset*. There's a couple ways to do it. Today, let's use `overflow`. 
+        要恢复浮动元素需要复位。有几种方法可以做到这一点。今天，我们来使用`overflow'。
         
-        Adding `overflow: hidden;` to the *parent* of the floated element forces it to 'contain' any floated child elements.
+        将“overflow：hidden;”添加到浮动元素的父元素中，将强制它包含任何浮动的子元素。
         
         ```
         <section class="about">
@@ -1291,7 +1289,7 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         # Resetting floats
         
-        This is a concept that requires much more discussion outside of the scope for today.  For more information, check out these extra resources:
+        这是一个概念，需要在今天的范围之外进行更多的讨论。有关更多信息，请查看以下额外资源：
         
         * [CSS Fundamentals: Containing Children](http://code.tutsplus.com/tutorials/css-fudamentals-containing-children--net-5664)
         * [Clearing Floats: An Overview of Different clearfix Methods](http://www.sitepoint.com/clearing-floats-overview-different-clearfix-methods/)
@@ -1303,10 +1301,10 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #border-radius
         
-        CSS3 introduced some new properties such as `border-radius`, used to make rounded corners or perfect circles, removing the need to manipulate image files.
+        CSS3引入了一些新的属性，如“border-radius”，用于制作圆角或圆形，无需操作图像文件。
         
-        The value can be set using various measurement units. 
-        Let's look at how we can use `px` and `%` in the examples below.
+        该值可以使用各种测量单位进行设置。
+        我们来看下面的例子中我们如何使用“px”和“％”。
         
         <div class="group">
           <div class="col-2">
@@ -1329,7 +1327,7 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         # Pseudo class & hover effects
         
-        It's common to apply a hover style to links. Use CSS *pseudo-class*, `:hover` to accomplish this.  This keyword is *attached* to a selector and specifies a *state* of the element, using a colon and **no** space.
+        通常将链接的悬停样式应用于链接。使用CSS * pseudo-class *，`：hover`来完成。关键词是 *附加* 到一个选择器，和制定元素的 *状态* ，以及用冒号和 **no** 空格.
         
         <textarea class="snippet" data-subject="#hover">a {
           padding: 10px;
@@ -1345,31 +1343,31 @@ border: 15px solid green;</textarea>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Exercise #10: Style the images (20mins)
+        #练习 #10: 风格和图形(20分钟)
         
-        Take some time to style your About and Loves images. 
+        花一些时间来设计“关于和爱”图像。
         
-        You can also use `width` or `height` on the images to make them all the same size and `margin`, `padding`, `border` to space and style the images.
+        你也可以在图像上使用“width”或“height”，使其大小相同，“margin”，“padding”，“border”可以对图像进行空间和样式。
         
-        If you have some text links on your page, add a hover effect.
+        如果你的页面上有一些文本链接，请添加悬停效果。
       
-        For your reference, check out [exercise-10.html](project/reference/exercise-10.html).
+        也可以参考 [exercise-10.html](project/reference/exercise-10.html).
       </script>
     </section>
 
     <section class="slide final-exercise" data-markdown>
       <script type="text/template">
-        # Final exercise!
+        # 最后的练习!
       </script>
     </section>
     
     <section class="slide" data-markdown data-toc>
       <script type="text/template">
-        #Background images
+        #背景图片
 
-        So far, we've been using `background` to add colours but it can also be used to add background *images*. 
+        到目前为止，我们一直在使用`background`来添加颜色，但也可以用来添加背景*图像*。
         
-        There are two ways to declare the `background` property.
+        有两种方法来声明`background`属性。
 
         ```css
         /* shorthand */
@@ -1385,9 +1383,9 @@ border: 15px solid green;</textarea>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        #Background images
+        #背景图片
         
-        **Important:** Note the location of the CSS file.  
+        **重要t:** 要注意CSS文件的地址 
         
         ```html
         project/
@@ -1398,8 +1396,7 @@ border: 15px solid green;</textarea>
           |-- index.html
         ```
         
-        Since it&#39;s inside of the **css** folder, the file path needs to reflect that.  
-        Use `../` to indicate that the directory needs to move *up* and *out* of the containing folder.
+        如果CSS文件不在文件夹内，那么文件的路径需要反应出来。使用`../`表示目录需要移动上和下的包含文件。
 
         ```css
         background: url(../images/image-file.jpg);
@@ -1411,23 +1408,23 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         # Background styles & the x-axis
         
-        Every time an HTML element is nested, the elements are stacked in layers, kind of like a sandwich!
+        每次HTML元素嵌套时，这些元素堆叠在一起，就像一个三明治！
 
         ![](framework/img/workshop/graphical-z-index.gif)<!-- .element: class="left" -->
         </div>
 
-        If a background image/colour is added to `body`, it will appear *behind* the nested elements (header, sections and footer).
+        如果背景图像/颜色被添加到“body”，它将在*后面*显示嵌套元素（标题，部分和页脚）。
         
-        Image source and further reading <!-- .element: class="note" --> [here](http://www.smashingmagazine.com/2009/09/15/the-z-index-css-property-a-comprehensive-look/).
+        图片来源和进一步阅读 <!-- .element: class="note" --> [here](http://www.smashingmagazine.com/2009/09/15/the-z-index-css-property-a-comprehensive-look/).
         </div>  
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Background Property
+        # 背景资料
         
-        If the image is smaller than the width of your browser window, it will repeat by default. We can change that with the `no-repeat` value like this: 
+        如果图像小于浏览器窗口的宽度，默认情况下会重复。我们可以用这样的`no-repeat`值来改变它：
 
         ```
         body { /* longhand */
@@ -1445,9 +1442,9 @@ border: 15px solid green;</textarea>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Class Exercise #11: background
+        # 课堂练习 #11: 背景
         
-        Let&#39;s add the below sample code to our project, one value at a time, to see how each property works.
+        我们一起来将以下示例代码添加到我们的项目中，一次一个值，以查看每个属性的工作原理。
 
         ```
         body { /* longhand */
@@ -1465,33 +1462,33 @@ border: 15px solid green;</textarea>
         ```
         
         ---
-        ###Pro tip!
+        ###重要提示!
         
-        Note that `background-size` is the longhand property. To include it in the shorthand style, it **must** be included after `background-position`, separated with the `/` character. In this case, it may be less error prone to just add it via the longhand property. More about background [here](https://css-tricks.com/almanac/properties/b/background/) and [here](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/).
+        注意`background-size`是longhand属性。 要将它包含在速记风格中，它必须**包含在`background-position`之后，用`/`字符分隔。在这种情况下，通过longhand属性添加它可能不太容易出错。更多关于背景[这里]（https://css-tricks.com/almanac/properties/b/background/）和[这里]To include it in the shorthand style, it **must** be included after `background-position`, separated with the `/` character. In this case, it may be less error prone to just add it via the longhand property. More about background [here](https://css-tricks.com/almanac/properties/b/background/) and [here](http://www.carsonshold.com/2013/02/css-background-sizecover-doesnt-like-fixed-positioning/).。
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Opaque background Styles
+        # 不透明的背景样式
         
-        The image adds some pizzazz but now it's hard to read the text!  
+        图像增加了一些比萨饼，但现在很难阅读文字！
         
-        Remember RGB colour values?  Use this instead of hex or keyword values to set an opacity to a background colour.
+        记住RGB颜色值吗？使用这个而不是十六进制或关键字值将不透明度设置为背景颜色。
         
-        Most online colour resources will have all the different types of values listed, or use image editing software like Photoshop.  
+        大多数在线颜色资源将列出所有不同类型的值，或使用Photoshop等图像编辑软件。
         
-        Or a quick online search almost always ends up with a solution like this tool right here: <http://hex.colorrrs.com>!
+        或者快速在线搜索几乎总是最终得到像这样的工具在这里的解决方案： <http://hex.colorrrs.com>!
         
-        The LLC project uses <span style="background:#612940;padding:0 5px;color: white;">#612940</span> which coverts to `rgb(97,41,64)`.
+        LLC 项目用 <span style="background:#612940;padding:0 5px;color: white;">#612940</span> 转化成 `rgb(97,41,64)`.
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Class Exercise #11: background
+        # 练习＃11：背景
         
-        Use `rgba()` as the value to create this effect. The values must be declared using this syntax:
+        使用`rgba（）`作为值来创建这个效果。必须使用以下语法声明值：
         
         ```css
         rgba(r value, g value, b value, alpha transparency percentage)
@@ -1501,25 +1498,25 @@ border: 15px solid green;</textarea>
           background: rgba(97, 41, 64, 0.95);
         }
         ```
-        The closer to 1 the alpha transparency value is, the more solid the colour will appear.
+        alpha透明度值越接近1，颜色越显示。
       </script>
     </section>
     
     <section class="slide title" data-markdown data-toc>
       <script type="text/template">
-        #Next steps
+        #下一步
       </script>
     </section>
     
     <section class="slide" data-markdown>
       <script type="text/template">
-        # Next steps
+        # 下一步
         
-        Here are a couple of ideas for furthering your project.
+        以下是推动你项目的几个想法。
         
-        1. use icon fonts instead of images for the social icons
+        1.使用图标字体而不是社交图标的图像
           * Try [Font Awesome](http://fortawesome.github.io/Font-Awesome/) icon fonts
-        1. add metadata - [info here](https://support.google.com/webmasters/answer/79812?hl=en) 
+        1. 添加元数据- [info here](https://support.google.com/webmasters/answer/79812?hl=en) 
         1. [Add a favicon](http://blog.teamtreehouse.com/how-to-make-a-favicon)
       </script>
     </section>
@@ -1528,28 +1525,28 @@ border: 15px solid green;</textarea>
       <script type="text/template">
         #Resources
         
-        1. Online tutorials:
+        1. 在线教程
           * http://learn.shayhowe.com/html-css/
           * https://www.codeschool.com/courses/front-end-foundations
         1. http://www.htmlandcssbook.com
-        1. Try a few more Ladies Learning Code workshops. Check our roadmap for suggestions at [http://ladieslearningcode.com/roadmap](http://ladieslearningcode.com/roadmap)
+        1. 再尝试一些女士学习代码研讨会。请查看我们的路线图以获取建议[http://ladieslearningcode.com/roadmap](http://ladieslearningcode.com/roadmap)
       </script>
     </section>
     
     <section class="slide small-type" data-markdown>
       <script type="text/template">
-      #Getting your site online
-
-      You will need to register a domain name and purchase hosting. Here are some suggestions:
+        在网站上设置网站
+        
+              你需要注册域名并购买托管。这里有一些建议：
       
       * [dreamhost.com](http://www.dreamhost.com/r.cgi?2085384) - domains and hosting - use promo code **LLC40** to get $40 off your registration!
       * [hover.com](http://hover.com/ladiescode) - domains - save 10% with the promo code "learningcode"
 
-      Why keep your domains and hosting separate?<!-- .element: class="note" --> [Learn more about Hover](http://ladieslearningcode.com/getting-hosted-domains-with-hover/).
+      为什么要保持你的域名和主机分开？<!-- .element: class="note" --> [Learn more about Hover](http://ladieslearningcode.com/getting-hosted-domains-with-hover/).
 
-      You will also need to upload your files to your hosting server. You will need some info usually provided by your hosting service provider: FTP Address, Username, Password.
-
-      Here's a tutorial getting your files online using FileZilla: [FileZilla Client Tutorial](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_%28en%29)  
+      你还需要将你的文件上传到你的托管服务器。你将需要通常由您的托管服务提供商提供的一些信息：FTP地址，用户名，密码。
+      
+            这是一个使用FileZilla在线获取文件的教程： [FileZilla Client Tutorial](https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_%28en%29)  
       </script>
     </section>
 
